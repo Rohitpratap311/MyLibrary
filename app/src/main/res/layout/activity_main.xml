@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="My Library"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp">
+
+            <Button
+                android:id="@+id/btnAllBooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="See All Books" />
+
+            <Button
+                android:id="@+id/btnCurrent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnAllBooks"
+                android:layout_marginTop="15dp"
+                android:text="Currently Reading Books" />
+
+            <Button
+                android:id="@+id/btnWantToRead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnCurrent"
+                android:layout_marginTop="15dp"
+                android:text="Want To Read Books" />
+
+            <Button
+                android:id="@+id/btnAlready"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnWantToRead"
+                android:layout_marginTop="15dp"
+                android:text="Already Read Books"
+                 />
+
+            <Button
+                android:id="@+id/btnAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnAlready"
+                android:layout_marginTop="15dp"
+                android:text="About" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

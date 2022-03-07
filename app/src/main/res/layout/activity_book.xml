@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookActivity">
+
+    <RelativeLayout
+        android:id="@+id/buttonRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnCurrentlyReading"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:text="Add to Currently Reading" />
+
+        <Button
+            android:id="@+id/btnWantToRead"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCurrentlyReading"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Add to Want To Read" />
+
+        <Button
+            android:id="@+id/btnAlreadyRead"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnWantToRead"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Add to Already Read" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRelativeLayout"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:id="@+id/firstRelLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bookImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/bookName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="false"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/bookImage"
+                android:text="BookName"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/authorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookName"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/bookImage"
+                android:text="Author"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/bookPages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/authorName"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/bookImage"
+                android:text="Pages" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/bookDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstRelLayout"
+            android:layout_margin="20dp"
+            android:hint="Description"
+            android:textSize="20dp" />
+    </RelativeLayout>
+</RelativeLayout>
